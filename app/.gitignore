@@ -1,0 +1,11 @@
+/build
+*.iml
+*.apk
+*.ap_
+*.dex
+*.class
+# Gradle files
+.gradle/
+build/
+
+
