@@ -7,31 +7,31 @@ import java.util.List;
  */
 public class Images {
 
-    @Override
-    public String toString() {
-        return "Images{" +
-                "error=" + error +
-                ", results=" + results +
-                '}';
-    }
+	@Override
+	public String toString() {
+		return "Images{" +
+				"error=" + error +
+				", results=" + results +
+				'}';
+	}
 
-    private boolean error;
+	private boolean error;
 
-    private List<ResultsEntity> results;
+	private List<ResultsEntity> results;
 
-    public void setError(boolean error) {
-        this.error = error;
-    }
+	public void setError(boolean error) {
+		this.error = error;
+	}
 
-    public void setResults(List<ResultsEntity> results) {
-        this.results = results;
-    }
+	public void setResults(List<ResultsEntity> results) {
+		this.results = results;
+	}
 
-    public boolean isError() {
-        return error;
-    }
+	public boolean isError() {
+		return error;
+	}
 
-    public List<ResultsEntity> getResults() {
-        return results;
-    }
+	public List<ResultsEntity> getResults() {
+		return results;
+	}
 }

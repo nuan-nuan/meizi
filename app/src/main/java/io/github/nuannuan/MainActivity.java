@@ -9,11 +9,6 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import io.github.nuannuan.callback.ImageCallBack;
-import io.github.nuannuan.modle.Images;
-import io.github.nuannuan.network.OkHttpUtils;
-import io.github.nuannuan.utils.MeiZiAPI;
-import okhttp3.Call;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -42,16 +37,6 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mMeiZiAdapter);
     }
     private void initData() {
-        OkHttpUtils.get().url(MeiZiAPI.HOST_API).build().execute(new ImageCallBack() {
-            @Override
-            public void onError(Call call, Exception e) {
 
-            }
-
-            @Override
-            public void onResponse(Images response) {
-                mMeiZiAdapter.update(response.getResults());
-            }
-        });
     }
 }
